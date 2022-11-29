@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+  <g id="chart" transform="translate(-108 -252)">
+    <g id="chart-2" data-name="chart">
+      <path id="Vector" d="M14.19,0H5.81C2.17,0,0,2.17,0,5.81v8.37C0,17.83,2.17,20,5.81,20h8.37c3.64,0,5.81-2.17,5.81-5.81V5.81C20,2.17,17.83,0,14.19,0Z" transform="translate(110 254)" opacity="0.4"/>
+      <path id="Vector-2" data-name="Vector" d="M.75,4.7A.755.755,0,0,1,0,3.95V.75A.755.755,0,0,1,.75,0,.755.755,0,0,1,1.5.75V3.96A.747.747,0,0,1,.75,4.7Z" transform="translate(114.25 261.65)"/>
+      <path id="Vector-3" data-name="Vector" d="M.75,8.18A.755.755,0,0,1,0,7.43V.75A.755.755,0,0,1,.75,0,.755.755,0,0,1,1.5.75V7.43A.755.755,0,0,1,.75,8.18Z" transform="translate(119.25 259.91)"/>
+      <path id="Vector-4" data-name="Vector" d="M.75,4.7A.755.755,0,0,1,0,3.95V.75A.755.755,0,0,1,.75,0,.755.755,0,0,1,1.5.75V3.96A.747.747,0,0,1,.75,4.7Z" transform="translate(124.25 261.65)"/>
+    </g>
+    <path id="Vector-5" data-name="Vector" d="M0,0H24V24H0Z" transform="translate(108 252)" fill="none" opacity="0"/>
+  </g>
+</svg>

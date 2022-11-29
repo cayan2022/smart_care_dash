@@ -1,0 +1,14 @@
+:root {
+  --primary: #61C5CB;
+  --secondary: #212D54;
+  --gray: #959595;
+  --semiLight: #F9F9F9;
+  --light: #fff;
+  --dark: #000;
+
+  --yellow-filter: invert(92%) sepia(9%) saturate(2995%) hue-rotate(148deg) brightness(84%) contrast(86%);
+  --semi-light-filter: invert(80%) sepia(0%) saturate(0%) hue-rotate(343deg) brightness(101%) contrast(98%);
+  --gray-filter: invert(73%) sepia(0%) saturate(2992%) hue-rotate(11deg) brightness(85%) contrast(79%);
+  --blue-filter: invert(12%) sepia(88%) saturate(864%) hue-rotate(200deg) brightness(96%) contrast(90%);
+  --light-filter: invert(99%) sepia(0%) saturate(2%) hue-rotate(343deg) brightness(115%) contrast(100%);
+}

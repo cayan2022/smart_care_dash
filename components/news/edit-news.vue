@@ -1,0 +1,233 @@
+<template>
+  <div>
+    <form class="w-full add-role" @submit.prevent="handleSubmit">
+      <div class="container">
+        <div
+          class="flex items-center content-center justify-between mb-10 lg:flex-row md:flex-row sm:flex-col flex-col"
+        >
+          <page-heading title="تعديل خبر " desc="قم تعديل بيانات الخبر" />
+
+          <div class="flex items-center bottom-action">
+            <page-button
+              :disable="loading"
+              name="تعديل"
+              type="submit"
+              btnClass="yellow"
+              imgClass="hidden"
+              class="ltr:ml-2 rtl:ml-3"
+            />
+
+            <page-button
+              name="الغاء"
+              @click.prevent="$router.push(localePath(`/news`))"
+              btnClass="black"
+              imgClass="hidden"
+            />
+          </div>
+        </div>
+
+        <div class="w-full py-10 px-7 rounded-lg bg-light">
+          <upload-image
+            icon="camera"
+            name="userProfile"
+            title="تعديل صورة الخبر"
+            class="mb-14"
+            :imgUrl="form.image"
+            v-model="form.image"
+            errorName="image"
+          />
+
+          <div class="grid lg:grid-cols-2 md:grid-cols-2 sm:grid-cols-1 gap-5">
+            <form-input
+              lableName="اسم الخبر بالعربية"
+              icon="service_name"
+              type="text"
+              lock="hidden"
+              placeholder="اسم الخبر"
+              v-model="form['ar[name]']"
+              errorName="ar.name"
+            />
+
+            <form-input
+              lableName="اسم الخبر بالانجليزية"
+              icon="service_name"
+              type="text"
+              lock="hidden"
+              placeholder="اسم الخبر"
+              v-model="form['en[name]']"
+              errorName="en.name"
+            />
+            <date-picker
+              type="date"
+              lableName="تاريخ الخبر"
+              icon="calendar"
+              placeholder="تاريخ الخبر"
+              class="mb-5"
+              name="اختر التوقيت"
+              v-model="form.date"
+              errorName="date"
+            />
+
+            <form-input
+              lableName="رابط المرجع"
+              icon="bag"
+              type="text"
+              lock="hidden"
+              placeholder="رابط المرجع"
+              v-model="form['link']"
+              errorName="link"
+            />
+
+            <form-textArea
+              lableName="وصف مختصر بالعربية"
+              icon="powers"
+              type="text"
+              lock="hidden"
+              placeholder="وصف مختصر"
+              v-model="form['ar[short_description]']"
+              errorName="ar.short_description"
+            />
+
+            <form-textArea
+              lableName="وصف مختصر بالانجليزية"
+              icon="powers"
+              type="text"
+              lock="hidden"
+              placeholder="وصف مختصر"
+              v-model="form['en[short_description]']"
+              errorName="en.short_description"
+            />
+
+            <client-only>
+              <VueEditor
+                lableName="وصف كامل بالعربية"
+                icon="powers"
+                placeholder="وصف مختصر"
+                v-model="form['ar[description]']"
+                errorName="ar.description"
+              />
+            </client-only>
+            <client-only>
+              <VueEditor
+                lableName="وصف كامل بالانجليزية"
+                icon="powers"
+                placeholder="وصف مختصر"
+                v-model="form['en[description]']"
+                errorName="en.description"
+              />
+            </client-only>
+          </div>
+        </div>
+      </div>
+    </form>
+
+    <!-- Success Modal -->
+    <success-modal v-if="showModel"> تم تعديل خبر جديد بنجاح </success-modal>
+  </div>
+</template>
+
+<script>
+export default {
+  name: "EditNews",
+  data() {
+    return {
+      showModel: false,
+      loading: false,
+      form: {
+        image: "",
+        "ar[name]": "",
+        "en[name]": "",
+        "ar[description]": "",
+        "en[description]": "",
+        "ar[short_description]": "",
+        "en[short_description]": "",
+        date: "",
+        link: "",
+        is_active: 1,
+      },
+    };
+  },
+  created() {
+    this.handleShow();
+  },
+  methods: {
+    async handleShow() {
+      const res = await this.$axios.get(
+        `dashboard/pages/tidings/${this.$route.params.id}`
+      );
+      const { data } = res.data;
+      const { link, date, is_active, translations, image } = data;
+      const arTrans = translations["ar"];
+      const enTrans = translations["en"];
+      this.form = {
+        link,
+        date,
+        is_active,
+        image,
+        "ar[name]": arTrans.name,
+        "ar[description]": arTrans.description,
+        "ar[short_description]": arTrans.short_description,
+        "en[name]": enTrans.name,
+        "en[description]": enTrans.description,
+        "en[short_description]": enTrans.short_description,
+      };
+      console.log(data);
+    },
+    generateData() {
+      const formData = new FormData();
+      if (typeof this.form["image"] === "string") {
+        delete this.form["image"];
+      }
+      for (const key in this.form) {
+        formData.append(key, this.form[key]);
+      }
+      return formData;
+    },
+    async handleSubmit() {
+      try {
+        this.loading = true;
+        await this.$axios.post(
+          `dashboard/pages/tidings/${this.$route.params.id}`,
+          this.generateData()
+        );
+        this.showModel = true;
+        this.loading = false;
+        this.$router.push(this.localePath("/news"));
+      } catch (error) {
+        console.log(error);
+      }
+    },
+  },
+};
+</script>
+
+<style lang="scss" scoped>
+.add-role {
+  .check-box {
+    min-width: 120px;
+    margin-bottom: 20px;
+  }
+  .yellow-btn {
+    border-color: transparent;
+    width: 215px;
+    height: 50px;
+    &::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      z-index: -1;
+      transition: all 0.3s linear;
+      top: 0;
+      background-color: var(--primary);
+    }
+    &:hover {
+      border-color: var(--primary);
+      &::after {
+        height: 0px;
+      }
+    }
+  }
+}
+</style>

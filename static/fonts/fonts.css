@@ -1,0 +1,28 @@
+@font-face {
+  font-family: 'Montserrat';
+  src: url("./Montserrat-Arabic-Light.woff2") format('woff2');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url("./Montserrat-Arabic-Medium.woff2") format('woff2');
+  font-weight: medium;
+  font-style: normal;
+  font-display: swap;
+}
+
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url("./Montserrat-Arabic-Bold.woff2") format('woff2');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+body{
+  font-family: 'Montserrat' , sans-serif;
+}

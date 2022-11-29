@@ -1,0 +1,7 @@
+<svg id="vuesax_bulk_location" data-name="vuesax/bulk/location" xmlns="http://www.w3.org/2000/svg" width="36.8" height="36.8" viewBox="0 0 36.8 36.8">
+  <g id="location">
+    <path id="Vector" d="M26.833,10.273C25.223,3.189,19.044,0,13.616,0H13.6C8.188,0,1.993,3.174.383,10.258-1.411,18.17,3.435,24.871,7.82,29.087a8.314,8.314,0,0,0,11.577,0C23.782,24.871,28.627,18.185,26.833,10.273Z" transform="translate(4.784 2.683)" opacity="0.4"/>
+    <path id="Vector-2" data-name="Vector" d="M9.66,4.83A4.83,4.83,0,1,1,4.83,0,4.83,4.83,0,0,1,9.66,4.83Z" transform="translate(13.57 10.979)"/>
+    <path id="Vector-3" data-name="Vector" d="M0,0H36.8V36.8H0Z" fill="none" opacity="0"/>
+  </g>
+</svg>

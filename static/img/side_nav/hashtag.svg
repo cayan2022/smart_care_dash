@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+  <g id="hashtag" transform="translate(-748 -188)">
+    <g id="hashtag-2" data-name="hashtag">
+      <path id="Vector" d="M14.19,0H5.81C2.17,0,0,2.17,0,5.81v8.37C0,17.83,2.17,20,5.81,20h8.37c3.64,0,5.81-2.17,5.81-5.81V5.81C20,2.17,17.83,0,14.19,0Z" transform="translate(750 190)" opacity="0.4"/>
+      <path id="Vector-2" data-name="Vector" d="M7.21,0H3.49A3.493,3.493,0,0,0,0,3.49V7.21A3.5,3.5,0,0,0,3.49,10.7H7.21A3.493,3.493,0,0,0,10.7,7.21V3.49A3.5,3.5,0,0,0,7.21,0ZM9.3,3.49V4.65H6.05V1.4H7.21A2.1,2.1,0,0,1,9.3,3.49ZM3.49,1.4H4.65V4.66H1.4V3.5A2.1,2.1,0,0,1,3.49,1.4ZM1.4,7.21V6.05H4.66V9.31H3.5A2.113,2.113,0,0,1,1.4,7.21ZM7.21,9.3H6.05V6.05H9.31V7.21A2.111,2.111,0,0,1,7.21,9.3Z" transform="translate(754.65 194.65)"/>
+    </g>
+    <path id="Vector-3" data-name="Vector" d="M0,0H24V24H0Z" transform="translate(748 188)" fill="none" opacity="0"/>
+  </g>
+</svg>

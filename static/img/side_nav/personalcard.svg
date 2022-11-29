@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+  <g id="personalcard" transform="translate(-172 -252)">
+    <g id="personalcard-2" data-name="personalcard">
+      <path id="Vector" d="M16,0H4A3.986,3.986,0,0,0,0,3.97V14.03A3.986,3.986,0,0,0,4,18H16a3.986,3.986,0,0,0,4-3.97V3.97A3.986,3.986,0,0,0,16,0Z" transform="translate(174 255)" opacity="0.4"/>
+      <path id="Vector-2" data-name="Vector" d="M5.75,1.5h-5A.755.755,0,0,1,0,.75.755.755,0,0,1,.75,0h5A.755.755,0,0,1,6.5.75.755.755,0,0,1,5.75,1.5Z" transform="translate(185.25 259.25)"/>
+      <path id="Vector-3" data-name="Vector" d="M4.75,1.5h-4A.755.755,0,0,1,0,.75.755.755,0,0,1,.75,0h4A.755.755,0,0,1,5.5.75.755.755,0,0,1,4.75,1.5Z" transform="translate(186.25 263.25)"/>
+      <path id="Vector-4" data-name="Vector" d="M2.75,1.5h-2A.755.755,0,0,1,0,.75.755.755,0,0,1,.75,0h2A.755.755,0,0,1,3.5.75.755.755,0,0,1,2.75,1.5Z" transform="translate(188.25 267.25)"/>
+      <path id="Vector-5" data-name="Vector" d="M4.62,2.31A2.31,2.31,0,1,1,2.31,0,2.31,2.31,0,0,1,4.62,2.31Z" transform="translate(178.19 259.17)"/>
+      <path id="Vector-6" data-name="Vector" d="M4.8.038a8.659,8.659,0,0,0-1.61,0A3.539,3.539,0,0,0,0,3.208a.481.481,0,0,0,.13.38.534.534,0,0,0,.37.17h7a.506.506,0,0,0,.37-.16A.52.52,0,0,0,8,3.218,3.55,3.55,0,0,0,4.8.038Z" transform="translate(176.499 265.073)"/>
+    </g>
+    <path id="Vector-7" data-name="Vector" d="M0,0H24V24H0Z" transform="translate(172 252)" fill="none" opacity="0"/>
+  </g>
+</svg>

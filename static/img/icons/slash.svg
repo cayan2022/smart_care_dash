@@ -1,0 +1,5 @@
+<svg id="slash" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
+  <path id="Vector" d="M8.958,17.917a8.958,8.958,0,1,1,8.958-8.958A8.966,8.966,0,0,1,8.958,17.917Zm0-16.667a7.708,7.708,0,1,0,7.708,7.708A7.718,7.718,0,0,0,8.958,1.25Z" transform="translate(1.042 1.042)" fill="#61C5CB"/>
+  <path id="Vector-2" data-name="Vector" d="M.623,12.915a.618.618,0,0,1-.442-.183.629.629,0,0,1,0-.883L11.848.181a.625.625,0,1,1,.883.883L1.065,12.731A.618.618,0,0,1,.623,12.915Z" transform="translate(3.46 3.544)" fill="#61C5CB"/>
+  <path id="Vector-3" data-name="Vector" d="M0,0H20V20H0Z" fill="none" opacity="0"/>
+</svg>

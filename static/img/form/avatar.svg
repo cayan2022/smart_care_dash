@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="39" height="39" viewBox="0 0 39 39">
+  <g id="vuesax_outline_user" data-name="vuesax/outline/user" transform="translate(-108 -188)">
+    <g id="user" transform="translate(108 188)">
+      <path id="Vector" d="M9.344,18.688a9.344,9.344,0,1,1,9.344-9.344A9.356,9.356,0,0,1,9.344,18.688Zm0-16.25A6.906,6.906,0,1,0,16.25,9.344,6.921,6.921,0,0,0,9.344,2.438Z" transform="translate(10.156 2.031)" fill="#959595"/>
+      <path id="Vector-2" data-name="Vector" d="M29.136,13.813a1.228,1.228,0,0,1-1.219-1.219c0-5.606-5.72-10.156-12.74-10.156S2.438,6.988,2.438,12.594a1.228,1.228,0,0,1-1.219,1.219A1.228,1.228,0,0,1,0,12.594C0,5.655,6.809,0,15.177,0S30.355,5.655,30.355,12.594A1.228,1.228,0,0,1,29.136,13.813Z" transform="translate(4.323 23.156)" fill="#959595"/>
+      <path id="Vector-3" data-name="Vector" d="M0,0H39V39H0Z" fill="none" opacity="0"/>
+    </g>
+  </g>
+</svg>
