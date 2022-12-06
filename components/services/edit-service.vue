@@ -62,28 +62,34 @@
                 errorName="en.name"
               />
 
-              <client-only>
+              <form-textArea
+                errorName="ar.description"
+                v-model="form['ar.description']"
+                lableName="وصف تفصيلي للخدمة (بالغة العربية)"
+                icon="powers"
+                type="text"
+                lock="hidden"
+                placeholder="وصف تفصيلي للخدمة"
+              />
+
+              <form-textArea
+                errorName="en.description"
+                v-model="form['en.description']"
+                lableName="وصف تفصيلي للخدمة (بالغة الانجليزية)"
+                icon="powers"
+                type="text"
+                lock="hidden"
+                placeholder="وصف تفصيلي للخدمة"
+              />
+
+              <!-- <client-only>
                 <VueEditor
-                  errorName="ar.description"
-                  v-model="form['ar.description']"
-                  lableName="وصف تفصيلي للخدمة (بالغة العربية)"
-                  icon="powers"
-                  type="text"
-                  lock="hidden"
-                  placeholder="وصف تفصيلي للخدمة"
                 />
               </client-only>
               <client-only>
                 <VueEditor
-                  errorName="en.description"
-                  v-model="form['en.description']"
-                  lableName="وصف تفصيلي للخدمة (بالغة الانجليزية)"
-                  icon="powers"
-                  type="text"
-                  lock="hidden"
-                  placeholder="وصف تفصيلي للخدمة"
                 />
-              </client-only>
+              </client-only> -->
               <form-select
                 v-model="form.category_id"
                 lableName="القسم"
